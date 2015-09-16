@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular.js Examples</title>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="./prism.css">
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<style>
+	  pre.prettyprint {
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    padding: 9.5px;
+  }
+        
+	iframe {
+		width:100%;
+		height:250px;
+		
+	}
+	
+    #flickr_html_code, #flickr_js_code { 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+		height:500px;
+		width:100%;
+
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+
+	<h1>Angular.js Examples</h1>
+	<div id="content">
+		<h2>Flickr Recent Uploads</h2>
+		<p>In this example we use the AngularJS HTTP request to get the Flickr Recent Uploads JSON Feed and display the results using a Angular expressions and directives.</p>
+
+		<h3>Demo</h3>
+        <iframe src="./flickr.html"></iframe>
+        <p><a href="flickr.html">View Demo</a></p>
+		<h3>Source Code</h3>
+            <pre class="prettyprint" >
+            <code class="language-markup" id="flickr_html_code">
+              
+            </code>
+  </pre>
+		
+
+		
+	</div>
+	
+	 
+	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./prism.js"></script>
+	
+    
+    <script>
+	
+    $('document').ready(function(){
+        
+       $.get('./flickr.html', function(data){
+		$('#flickr_html_code').text(data);
+           Prism.highlightAll()
+	   });
+	
+    });
+
+	</script>
+	
+</body>
+</html> 
