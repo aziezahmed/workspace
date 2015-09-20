@@ -4,12 +4,18 @@
 		<title>PHP Database Test</title>
 	</head>
 	<body>
+		<ul>
 		<?php 
 			$db = new SQLite3('../sql/my_db.db');
 			$results = $db->query('SELECT * FROM bookmarks');
 			while ($row = $results->fetchArray()) {
-    			var_dump($row);
+    			echo '<li><a href="';
+				echo $row[2];
+				echo '">';
+				echo $row[1];
+				echo '</a></li>';
 			}
 		?>
+		</ul>
 	</body>
 </html>
