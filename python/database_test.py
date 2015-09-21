@@ -15,7 +15,8 @@ try:
     rows = cur.fetchall()
 
     for row in rows:
-        print row            
+        print row[1]
+        print row[2]
     
 except lite.Error, e:
     
