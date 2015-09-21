@@ -6,7 +6,7 @@
 	<body>
 		<ul>
 		<?php 
-			$db = new SQLite3('../sql/my_db.db');
+			$db = new SQLite3('../sql/bookmarks.db');
 			$results = $db->query('SELECT * FROM bookmarks');
 			while ($row = $results->fetchArray()) {
     			echo '<li><a href="';

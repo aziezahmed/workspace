@@ -7,7 +7,7 @@ import sys
 con = None
 
 try:
-    con = lite.connect('../sql/my_db.db')
+    con = lite.connect('../sql/bookmarks.db')
     
     cur = con.cursor()    
     cur.execute('SELECT * FROM bookmarks')
