@@ -6,15 +6,15 @@ connection = sqlite3.connect('../sql/bookmarks.db')
 
 cursor = connection.cursor()
 
-print("Bookmarks")
-print("1 - list all bookmarks")
-print("2 - add a bookmarks")
-print("3 - delete a bookmark")
-print("4 - exit")
-
 option = 0;
 
 while (option != 4):
+    print("Bookmarks")
+    print("1 - list all bookmarks")
+    print("2 - add a bookmarks")
+    print("3 - delete a bookmark")
+    print("4 - exit")
+    
     option = input("Select and option: ")
 
     if option == 1:
