@@ -1,0 +1,1 @@
+CREATE TABLE bookmarks(id INTEGER PRIMARY KEY autoincrement, title TEXT, url TEXT);
