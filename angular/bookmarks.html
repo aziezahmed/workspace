@@ -31,7 +31,7 @@
                 function ($scope, $http) {
                     $http({
                         method: 'GET',
-                        url: '../php/bookmarks.php'
+                        url: 'http://127.0.0.1:3000/'
                     }).success(function (bookmarks) {
                         $scope.bookmarks = bookmarks;
                     })
