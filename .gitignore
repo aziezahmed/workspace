@@ -1,5 +1,6 @@
 .DS_Store
 *.db
 *.exe
+*.out
 node_modules/
 bower_components/
